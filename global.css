@@ -30,7 +30,11 @@ body {
 }
 
 main {
-    margin-top: var(--header-height);
+    margin-top: calc(var(--header-height) + 3rem);
+}
+
+ul {
+    list-style-type: none;
 }
 
 nav {
@@ -43,18 +47,68 @@ nav {
     width: 100%;
 }
 
+nav .menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav.show .menu {
+    opacity: 1;
+    visibility: visible;
+
+    background-color: var(--body-color);
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: grid;
+    place-content: center;
+}
+
+nav.show ul.grid {
+    gap: 4rem;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    position: relative;
+
+    transition: 300ms;
+}
+
+nav ul li a:hover {
+    color: var(--base-color);
+}
+
+nav ul li a::after {
+    content: "";
+
+    width: 0;
+    height: 2px;
+
+    background-color: var(--base-color);
+
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+
+    transition: width 200ms;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
 img {
     width: 100%;
     height: auto;
-}
-
-h1 {
-    font-weight: 700;
-    font-size: 1.875rem;
-    font-family: 'Poppins', sans-serif;
-    --webkit-font-smoothing: auto;
-    
-    color: var(--title-color);
 }
 
 a {
@@ -75,7 +129,7 @@ a {
     margin: 0 1.5rem;
 }
 
-#home .text h1 {
+#home .text h2 {
     margin: 0 0 1rem 0;
 }
 
@@ -126,6 +180,15 @@ a {
     z-index: 100;
 
     background-color: var(--body-color);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.875rem;
+    font-family: 'Poppins', sans-serif;
+    --webkit-font-smoothing: auto;
+    
+    color: var(--title-color);
 }
 
 .logo {
