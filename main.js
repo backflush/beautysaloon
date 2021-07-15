@@ -22,3 +22,12 @@ window.addEventListener("scroll", () => {
     if(window.scrollY >= navHeight) return header.classList.add("scroll")
     else return header.classList.remove("scroll");
 })
+
+const swiper = new Swiper(".swiper-container", {
+    slidePerView: 1,
+    pagination: {
+        element: ".swiper-pagination"
+    },
+    mousewheel: true,
+    keyboard: true,
+});
