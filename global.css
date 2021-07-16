@@ -326,6 +326,32 @@ a {
     color: var(--base-color);
 }
 
+footer {
+    background-color: var(--base-color);
+}
+
+footer .logo {
+    display: inline-block;
+
+    margin: 0 0 1.5rem 0;
+}
+
+footer .brand p {
+    color: var(--text-color-light);
+
+    margin: 0 0 .75rem 0;
+}
+
+footer i {
+    font-size: 1.5rem;
+
+    color: var(--text-color-light);
+}
+
+footer .social a {
+    margin-right: 2rem;
+}
+
 #header {
     border-bottom: 1px solid #e4e4e4;
 
@@ -371,6 +397,10 @@ a {
 
 .logo span {
     color: var(--base-color);
+}
+
+.logo-alt span {
+    color: var(--body-color);
 }
 
 .divider-1 {
