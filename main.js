@@ -15,14 +15,6 @@ for(const link of links) {
     });
 }
 
-const header = document.querySelector("#header");
-const navHeight = header.offsetHeight;
-
-window.addEventListener("scroll", () => {
-    if(window.scrollY >= navHeight) return header.classList.add("scroll")
-    else return header.classList.remove("scroll");
-})
-
 const swiper = new Swiper(".swiper-container", {
     slidePerView: 1,
     pagination: {
@@ -47,13 +39,27 @@ scrollReveal.reveal(
     #contact .text, #contact .links,
     footer .brand, footer .social`
     , { interval: 100 }
-)
+);
 
-const backToTopButton = document.querySelector(".back-to-top");
-window.addEventListener("scroll", () => {
+function changeHeaderWhenScroll() {
+    const header = document.querySelector("#header");
+    const navHeight = header.offsetHeight;
+
+    if(window.scrollY >= navHeight) return header.classList.add("scroll")
+    else return header.classList.remove("scroll");
+}
+
+function backToTop() {
+    const backToTopButton = document.querySelector(".back-to-top");
+
     if(window.scrollY >= 500) {
         backToTopButton.classList.add("show");
     } else {
         backToTopButton.classList.remove("show");
     }
+}
+
+window.addEventListener("scroll", () => {
+    changeHeaderWhenScroll();
+    backToTop();
 })
