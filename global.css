@@ -543,3 +543,7 @@ footer .social a:hover {
 .swiper-pagination-bullet-active {
     background-color: var(--base-color);
 }
+
+@media(min-width: 992px) {
+    
+}
