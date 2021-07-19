@@ -13,6 +13,9 @@
 
     --title-font-size: 1.875rem;
     --subtitle-font-size: 1rem;
+
+    --title-font: "Poppins", sans-serif;
+    --body-font: "DM Sans", sans-serif;
 }
 
 *, *::before, *::after {
@@ -28,7 +31,7 @@ html {
 body {
     font-size: 400;
     font-size: 1rem;
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--body-font);
 
     color: var(--text-color);
     background-color: var(--body-color);
@@ -385,7 +388,7 @@ footer .social a:hover {
 .title {
     font-weight: 700;
     font-size: 1.875rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--title-font);
     --webkit-font-smoothing: auto;
     
     color: var(--title-color);
@@ -401,7 +404,7 @@ footer .social a:hover {
 .logo {
     font-size: 1.31rem;
     font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--title-font);
 
     color: var(--title-color);
 }
@@ -470,7 +473,7 @@ footer .social a:hover {
 
     font-size: 1rem;
     font-weight: 500;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--body-font);
 
     transition: background 300ms;
 }
@@ -554,6 +557,10 @@ footer .social a:hover {
 @media(min-width: 1200px) {
     main {
         margin-top: var(--header-height);
+    }
+
+    .section {
+        padding: 10rem 0;
     }
 }
 
