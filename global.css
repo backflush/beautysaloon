@@ -10,6 +10,9 @@
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
+
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1rem;
 }
 
 *, *::before, *::after {
@@ -31,10 +34,6 @@ body {
     background-color: var(--body-color);
 
     --webkit-font-smoothing: antialised;
-}
-
-main {
-    margin-top: calc(var(--header-height) + 3rem);
 }
 
 ul {
@@ -330,6 +329,10 @@ footer {
     background-color: var(--base-color);
 }
 
+footer.section {
+    padding: 4rem 0;
+}
+
 footer .logo {
     display: inline-block;
 
@@ -428,11 +431,15 @@ footer .social a:hover {
 }
 
 .section {
-    padding: 5rem 0;
+    padding: calc(5rem + var(--header-height)) 0;
 }
 
 .section .title {
     margin: 0 0 1rem 0;
+}
+
+.section .subtitle {
+    font-size: var(--subtitle-font-size);
 }
 
 .section header {
@@ -544,6 +551,15 @@ footer .social a:hover {
     background-color: var(--base-color);
 }
 
+@media(min-width: 1200px) {
+    main {
+        margin-top: var(--header-height);
+    }
+}
+
 @media(min-width: 992px) {
-    
+    :root {
+        --title-font-size: 2.25rem;
+        --subtitle-font-size: 1.125rem;
+    }
 }

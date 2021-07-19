@@ -18,7 +18,7 @@ for(const link of links) {
 const swiper = new Swiper(".swiper-container", {
     slidePerView: 1,
     pagination: {
-        element: ".swiper-pagination"
+        el: ".swiper-pagination"
     },
     mousewheel: true,
     keyboard: true,
