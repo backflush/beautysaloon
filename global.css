@@ -118,7 +118,7 @@ nav ul li a {
     transition: 300ms;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a.active {
     color: var(--base-color);
 }
 
@@ -137,7 +137,7 @@ nav ul li a::after {
     transition: width 200ms;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after, nav ul li a.active::after {
     width: 100%;
 }
 
