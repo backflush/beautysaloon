@@ -1,5 +1,5 @@
 # beautysaloon
-![Preview-Screen](./assets/dronesCover.png)
+![Preview-Screen](./assets/beautysaloonCover.png)
 
 ## About this project
 
