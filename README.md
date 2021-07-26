@@ -1,5 +1,5 @@
 # beautysaloon
-![Preview-Screen](./assets/beautysaloonCover.png)
+![Preview-Screen](./assets/beautysalonCover.png)
 
 ## About this project
 
@@ -39,7 +39,7 @@ Just open the index.html file and it should work.
 
 ## Contribuing
 
-It was developed by me during the NLW Together, my tutor was [Jakeliny Gracielly](https://github.com/maykbrito). I'll be glad to receive any feedback about something that a I need to redo. And if you have any question....
+It was developed by me during the NLW Together, my tutor was [Mayk Brito](https://github.com/maykbrito). I'll be glad to receive any feedback about something that a I need to redo. And if you have any question....
 
 Reach me at: bwesleysouza@gmail.com
 
